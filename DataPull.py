@@ -20,8 +20,8 @@ import requests
 view_param = 's6ew-h6mp'
 type_param = 'json'
 row_param = 'rows'
-request_url = 'http://data.consumerfinance.gov/api/views/' + view_id + '/' + rows + '.' + response_type
+request_url = 'http://data.consumerfinance.gov/api/views/' + view_param + '/' + row_param + '.' + type_param
 r = requests.get(request_url)
 print(r.status_code)
-r.json()
+r.json()changedchangedf
 print(r.json)
