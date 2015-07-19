@@ -17,9 +17,10 @@ import requests
 # eew7-9yf2	Student loans
 # wfbn-zkat	Vehicle or other consumer loans
 
-view_id = 's6ew-h6mp'
-res_type = 'json'
-request_url = 'http://data.consumerfinance.gov/api/views/' + view_id + '/rows.' + res_type
+view_param = 's6ew-h6mp'
+type_param = 'json'
+row_param = 'rows'
+request_url = 'http://data.consumerfinance.gov/api/views/' + view_id + '/' + rows + '.' + response_type
 r = requests.get(request_url)
 print(r.status_code)
 r.json()
